@@ -4,6 +4,7 @@ import axios from "axios";
 import UserCard from "./UserCard";
 import DeleteUser from "./DeleteUser";
 import UpdateUser from "./UpdateUser";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function User({ token }) {
   const [currentPage, setCurrentPage] = useState(1);

@@ -4,7 +4,6 @@ import User from "../Components/User";
 
 function HomePage() {
   const token = JSON.parse(localStorage.getItem("token"))
-  
   return (
     <>
       <NavBar />

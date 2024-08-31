@@ -1,5 +1,6 @@
 import React from "react";
-import { FaEdit, FaTrash } from "react-icons/fa"; // Using FontAwesome icons
+import { FaEdit, FaTrash } from "react-icons/fa"; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function UserCard({ user, onDeleteClick, onEditClick }) {
   return (

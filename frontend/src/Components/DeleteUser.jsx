@@ -2,6 +2,7 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap"; // Using React-Bootstrap for modal
 import axios from "axios";
 import { toast } from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DeleteUser({ show, handleClose, userId, fetchUserData, currentPage, token }) {
   const handleDelete = async () => {

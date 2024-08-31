@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Modal, Button, Form } from "react-bootstrap"; // Using React-Bootstrap for modal and form
+import { Modal, Button, Form } from "react-bootstrap"; 
 import axios from "axios";
 import { toast } from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function UpdateUser({ show, handleClose, userId, fetchUserData, currentPage, token }) {
   const [userData, setUserData] = useState({
@@ -12,7 +13,7 @@ function UpdateUser({ show, handleClose, userId, fetchUserData, currentPage, tok
   });
   const [isLoading, setIsLoading] = useState(false);
 
-  // Fetch user data when the component mounts or when userId changes
+
   useEffect(() => {
     if (userId) {
       const fetchUserDetails = async () => {
@@ -55,7 +56,7 @@ function UpdateUser({ show, handleClose, userId, fetchUserData, currentPage, tok
       );
       toast.success("User updated successfully.");
       handleClose();
-      fetchUserData(currentPage); // Refetch the user data after update
+      fetchUserData(currentPage); 
     } catch (error) {
       toast.error(
         error.response?.data?.message || "Failed to update user. Please try again."
