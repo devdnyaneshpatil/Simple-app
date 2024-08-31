@@ -3,7 +3,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Signup from './Pages/Signup'
 import HomePage from './Pages/HomePage'
-import Login from './Pages/Login.Jsx'
+import Login from './Pages/Login.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
