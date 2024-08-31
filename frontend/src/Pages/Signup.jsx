@@ -27,7 +27,7 @@ function Signup() {
     setIsLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/auth/sign-up",
+        "https://simple-app-8c2n.onrender.com/api/v1/auth/sign-up",
         formData
       );
       setIsLoading(false);

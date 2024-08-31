@@ -18,7 +18,7 @@ function User({ token }) {
     setIsLoading(true);
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/user?page=${page}&limit=5`,
+        `https://simple-app-8c2n.onrender.com/api/v1/user?page=${page}&limit=5`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

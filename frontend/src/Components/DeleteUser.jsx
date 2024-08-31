@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 function DeleteUser({ show, handleClose, userId, fetchUserData, currentPage, token }) {
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:8080/api/v1/user/${userId}`, {
+      await axios.delete(`https://simple-app-8c2n.onrender.com/api/v1/user/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

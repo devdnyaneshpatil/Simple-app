@@ -17,7 +17,7 @@ function UpdateUser({ show, handleClose, userId, fetchUserData, currentPage, tok
     if (userId) {
       const fetchUserDetails = async () => {
         try {
-          const { data } = await axios.get(`http://localhost:8080/api/v1/user/${userId}`, {
+          const { data } = await axios.get(`https://simple-app-8c2n.onrender.com/api/v1/user/${userId}`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -41,7 +41,7 @@ function UpdateUser({ show, handleClose, userId, fetchUserData, currentPage, tok
     setIsLoading(true);
     try {
       await axios.patch(
-        `http://localhost:8080/api/v1/user/${userId}`,
+        `https://simple-app-8c2n.onrender.com/api/v1/user/${userId}`,
         {
           name: userData.name,
           phoneNo: userData.phoneNo,
